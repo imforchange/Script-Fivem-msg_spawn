@@ -1,6 +1,7 @@
 -- PAS BESOIN DE TOUCHER ICI
 
 local isOpen = false
+local hasOpenedOnce = false
 
 RegisterCommand("toggleUI", function()
     isOpen = not isOpen
@@ -12,12 +13,15 @@ RegisterCommand("toggleUI", function()
 end)
 
 AddEventHandler('playerSpawned', function()
-    isOpen = true
-    SetNuiFocus(isOpen, isOpen)
-    SendNUIMessage({
-        type = "toggleUI",
-        display = isOpen
-    })
+    if not hasOpenedOnce then
+        isOpen = true
+        hasOpenedOnce = true
+        SetNuiFocus(isOpen, isOpen)
+        SendNUIMessage({
+            type = "toggleUI",
+            display = isOpen
+        })
+    end
 end)
 
 RegisterNUICallback('closeUI', function()
