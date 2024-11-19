@@ -1,8 +1,11 @@
 # Script-Fivem-msg_spawn
 
-Hey salut !
-J'ai crée un petit script FiveM pour afficher une interface quand un joueur se connecte à votre serveur !
-Cela peut vous permettre de lui afficher une informations en particulier pour guider votre communauté.
-Il est disponible via GitHub, ou je créerais prochainement encore plus de script ;)
+Hey hi!
 
-Merci à vous !
+I created a small FiveM script to display an interface when a player connects to your server!
+
+This can allow you to display specific information to guide your community.
+
+It is available via GitHub, or I will soon create even more scripts ;)
+
+Thank you!
